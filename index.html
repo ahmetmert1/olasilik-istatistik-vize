@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body onload="goster();" class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529;">
+        <div class="container px-lg-5">
+            <a class="navbar-brand" href="giris.html">Olasılık ve İstatistik</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="giris.html">Yeniden Hesapla</a>
+                    </li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active"></li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4"  >
+                                <div class="card-body">Aritmetik Ortalama</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="AritmetikOrtalama" class="small text-white"><i
+                                            class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Medyan</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="Medyan" class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Standart sapma</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="StandartSapma" class="small text-white"><i class="fas fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Varyans</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="Varyans" class="small text-white"><i class="fas fa-angle-right"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Mod</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="Mod" class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Harmonik Ortalama</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="HarmonikOrtalama" class="small text-white"><i
+                                            class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Geometrik ortalama</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="Geometrikortalama" class="small text-white"><i
+                                            class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-primary text-white mb-4" >
+                                <div class="card-body">Ortalama Sapma</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <div id="OrtalamaSapma" class="small text-white"><i class="fas fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card mb-4 border-0">
+                                <!-- <div class="card-header">
+                                    <i class="fas fa-chart-area me-1"></i>
+                                    Area Chart Example
+                                </div> -->
+                                <div id='myDiv0' class="mr-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card mb-4 border-0">
+                                <!-- <div class="card-header">
+                                    <i class="fas fa-chart-bar me-1"></i>
+                                    Bar Chart Example
+                                </div> -->
+                                <div id='myDiv1' class="mr-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card mb-4 border-0">
+                                <!-- <div class="card-header">
+                                    <i class="fas fa-chart-bar me-1"></i>
+                                    Bar Chart Example
+                                </div> -->
+                                <div id='myDiv2' class="mr-3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+
+</body>
+
+</html>
