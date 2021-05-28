@@ -16,3 +16,13 @@ Girişini yaptığınız veri topluluğuyla ilgili;
 - Ortalama sapma
 
 gibi değerlere ulaşabilirsiniz.
+
+# Site içi Görüntüler
+
+Verilerinizin girişini yapacağınız giriş bölümü:
+
+<img src="olasilikresimler/giris.PNG"  width="600" height="400">
+
+Veri topluluğunuzun değerlerini görebileceğiniz içerik bölümü:
+
+<img src="olasilikresimler/icerik.PNG"  width="600" height="350">
