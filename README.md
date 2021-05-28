@@ -6,13 +6,13 @@
 Bu site sayesinde, siteye veri girişi yapabilirsiniz.
 Girişini yaptığınız veri topluluğuyla ilgili;
 
--Aritmetik Ortalama
--Medyan
--Standart Sapma
--Varyans
--Mod 
--Harmonik Ortalama
--Geometrik Ortalama
--Ortalama sapma
+- Aritmetik Ortalama
+- Medyan
+- Standart Sapma
+- Varyans
+- Mod 
+- Harmonik Ortalama
+- Geometrik Ortalama
+- Ortalama sapma
 
 gibi değerlere ulaşabilirsiniz.
