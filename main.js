@@ -99,7 +99,7 @@ function varyans() {
     for (let i = 0; i < liste.length; i++) {
         result += (liste[i] - ort) ** 2
     }
-    result = (result / (liste.length - 1)) ** 0.5;
+    result = (result / (liste.length )) ** 0.5;
     return result ** 2;
 }
 
